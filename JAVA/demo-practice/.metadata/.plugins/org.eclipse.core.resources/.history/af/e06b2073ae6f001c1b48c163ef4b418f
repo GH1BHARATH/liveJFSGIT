@@ -1,0 +1,16 @@
+package com.ecz.app.v2;
+
+public class Product {
+
+	public int productId;
+	public String productName;
+	public float price;
+	boolean available;
+
+	public void displayDetails() {
+		System.out.println(" Book Id : " + productId);
+		System.out.println(" Book Name : " + productName);
+		System.out.println(" Price : " + price);
+		System.out.println(" Available : " + available);
+	}
+}

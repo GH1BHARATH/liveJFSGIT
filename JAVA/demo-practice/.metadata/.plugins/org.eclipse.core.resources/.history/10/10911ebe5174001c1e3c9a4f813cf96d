@@ -1,0 +1,12 @@
+package basics;
+
+public class WrapperEx {
+	public static void main(String[] args) {
+		String idString = "12345";
+		int idInt = Integer.parseInt(idString);
+		int result = idInt + idInt;
+		System.out.println(result);
+		
+		
+	}
+}

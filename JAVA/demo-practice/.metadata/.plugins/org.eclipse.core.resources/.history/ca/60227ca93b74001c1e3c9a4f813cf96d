@@ -1,0 +1,9 @@
+package basics;
+
+public class StaticMethodEx {
+public static void main(String[] args) {
+	
+}
+}
+
+class 

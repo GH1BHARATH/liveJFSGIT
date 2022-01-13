@@ -1,0 +1,13 @@
+package inheritance;
+
+public class MultilevelInheritance {
+
+}
+
+class Telephone {
+	
+}
+
+class FeaturePhone extends Telephone {
+	
+}

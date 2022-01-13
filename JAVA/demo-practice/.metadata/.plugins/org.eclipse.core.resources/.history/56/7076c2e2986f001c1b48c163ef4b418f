@@ -1,0 +1,12 @@
+package com.ecz;
+
+import java.util.ArrayList;
+
+public class App {
+	// CREATE THE SHOPPING CART
+	ArrayList<String> shoppingCart = new ArrayList();
+	
+	public static void main(String[] args) {
+		System.out.println("Welcome to the EzComWorld");
+	}
+}

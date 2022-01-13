@@ -1,0 +1,17 @@
+package basics;
+
+public class StaticMethodEx {
+	public static void main(String[] args) {
+		System.out.println(Learner.meetingPlatform);
+		
+	}
+}
+
+class Learner {
+	// static and belongs to class
+	public static String meetingPlatform = "WEBEX";
+	public static void getPlatform() {
+		System.out.println(meetingPlatform);
+	}
+	public String name;
+}

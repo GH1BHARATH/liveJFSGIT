@@ -1,0 +1,12 @@
+package basics;
+
+public class StaticMethodEx {
+	public static void main(String[] args) {
+
+	}
+}
+
+class Learner {
+	// static because it belongs 
+	public static String meetingPlatform = "WEBEX";
+}

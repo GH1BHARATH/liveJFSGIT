@@ -1,0 +1,15 @@
+package com.ecz;
+
+public class Product {
+
+public int bookId;
+public String bookName;
+public float price;
+boolean available;
+
+//constructor
+public Product() {
+	
+}
+
+}

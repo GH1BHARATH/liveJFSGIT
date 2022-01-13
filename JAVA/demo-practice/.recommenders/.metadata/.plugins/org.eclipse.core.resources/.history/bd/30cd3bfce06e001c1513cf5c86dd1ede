@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+//LAB : CREATE THE MULTIPLY, SUBTRACT, DIVIDE METHODS
+public class CalculatorOverloading {
+	public static void main(String[] args) {
+		System.out.println("ADD");
+		Scanner scannerObject = new Scanner(System.in);
+		System.out.println("Enter Number 1 :");
+		String number1String = scannerObject.nextLine();
+		System.out.println("Enter Number 2 :");
+		String number2String = scannerObject.nextLine();
+		int number1 = Integer.parseInt(number1String);
+		int number2 = Integer.parseInt(number2String);
+		addInt(number1,number2);
+	}
+
+
+	public  void addInt(int num1, int num2) {
+		
+	}
+
+	public  void multiply1() {
+	
+	}
+}
+
+// STATIC VS INSTANCE

@@ -1,0 +1,19 @@
+package basics;
+
+import java.util.ArrayList;
+
+public class WrapperEx {
+	public static void main(String[] args) {
+		String idString = "12345";
+		int idInt = Integer.parseInt(idString);
+		int result = idInt + idInt;
+		System.out.println(result);
+		
+		int i = 100;
+		ArrayList<Integer> numbersList = new ArrayList<Integer>();
+		numbersList.add(i);
+		Integer integerVal = i;
+		numbersList.add(integerVal);
+		Integer inegerVal1 = Integer.valueOf(i);
+	}
+}

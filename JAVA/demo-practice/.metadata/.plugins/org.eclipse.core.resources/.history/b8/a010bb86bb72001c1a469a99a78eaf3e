@@ -1,0 +1,12 @@
+package multithreading;
+
+public class EvenOddThreads {
+
+}
+
+
+class EvenThread extends Thread{
+	public void run() {
+		
+	}
+}

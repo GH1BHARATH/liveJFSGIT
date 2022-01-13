@@ -1,0 +1,10 @@
+package com.ecz;
+
+public class App {
+	// CREATE THE SHOPPING CART
+	
+	public static void main(String[] args) {
+		System.out.println("Welcome to the EzComWorld");
+
+	}
+}

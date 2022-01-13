@@ -1,0 +1,10 @@
+package multithreading;
+
+public class EvenOddThreads {
+
+}
+
+
+class EvenThread extends Thread{
+	
+}
