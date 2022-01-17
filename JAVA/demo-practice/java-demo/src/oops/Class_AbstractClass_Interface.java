@@ -16,4 +16,15 @@ abstract class Account {
 //		
 //	}
 	public abstract void displayAccountInfo();
+	public void displayBankDetails(){
+		System.out.println("CITI Bank");
+	}
 }
+class SavingsAccount extends Account{
+
+	@Override
+	public void displayAccountInfo() {
+		System.out.println("Savings Account");
+	}	
+}
+// Create Current account and display "Current Account"
