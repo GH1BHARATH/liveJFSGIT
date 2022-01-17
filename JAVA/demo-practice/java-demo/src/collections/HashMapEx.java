@@ -7,7 +7,8 @@ import java.util.TreeMap;
 public class HashMapEx {
 	public static void main(String[] args) {
 //		gettingStarted();
-		merge();
+//		merge();
+		useStringKeyAndIntegerValue();
 	}
 
 	private static void gettingStarted() {
@@ -41,15 +42,15 @@ public class HashMapEx {
 	}
 
 	private static void merge() {
-		TreeMap<String,Integer> treeMap = new TreeMap<String,Integer>();
+		TreeMap<String, Integer> treeMap = new TreeMap<String, Integer>();
 //		treeMap.put("DeepWork", 1);
 //		treeMap.put("DeepWork", 3);
 		treeMap.merge("DeepWork", 1, (oldValue, newValue) -> oldValue + newValue);
 		System.out.println(treeMap);
 		treeMap.merge("DeepWork", 2, (oldValue, newValue) -> oldValue + newValue);
 		System.out.println(treeMap);
-		
-		TreeMap<String,Integer> treeMap1 = new TreeMap<String,Integer>();
+
+		TreeMap<String, Integer> treeMap1 = new TreeMap<String, Integer>();
 //		treeMap.put("DeepWork", 1);
 //		treeMap.put("DeepWork", 3);
 		treeMap1.put("Account", 1000);
@@ -59,4 +60,16 @@ public class HashMapEx {
 		treeMap1.merge("Account", 200, (oldValue, newValue) -> oldValue - newValue);
 		System.out.println(treeMap1);
 	}
+
+	private static void useStringKeyAndIntegerValue() {
+		Map<String, Integer> performanceMap = new HashMap<String, Integer>();
+		performanceMap.put("Yasar", 80);
+		performanceMap.put("Rama", 79);
+
+		int performance = performanceMap.get("Yasar");
+		System.out.println(performance);
+		System.out.println(performanceMap);
+
+	}
+
 }
