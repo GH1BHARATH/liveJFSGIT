@@ -1,14 +1,17 @@
 package collections;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
 
 public class HashMapEx {
 	public static void main(String[] args) {
 //		gettingStarted();
-//		merge();
+		merge();
 		useStringKeyAndIntegerValue();
+		useHashSet();
 	}
 
 	private static void gettingStarted() {
@@ -71,5 +74,11 @@ public class HashMapEx {
 		System.out.println(performanceMap);
 
 	}
-
+	private static void useHashSet() {
+		Set<String> namesSet = new HashSet<String>();
+		namesSet.add("Yasar");
+		namesSet.add("Yasar");
+		namesSet.add("Rama");
+System.out.println(namesSet);
+	}
 }
