@@ -9,7 +9,8 @@ public class Class_AbstractClass_Interface {
 //		Cannot instantiate the type NetBanking
 //		netBanking = new NetBanking();
 		System.out.println("USING SAVINGS ACCOUNT");
-		Account account = new SavingsAccount();
+		Account account = null;
+		account = new SavingsAccount();
 		account.displayAccountInfo();
 		account.displayBankDetails();
 
@@ -18,7 +19,28 @@ public class Class_AbstractClass_Interface {
 		account.displayAccountInfo();
 		account.displayBankDetails();
 
+//		USING NETBANKING
+		System.out.println("USING NET BANKING");
+		NetBanking netBanking = null;
+		netBanking = new SavingsAccount();
+		netBanking.transferAmount();
+		
+
+// USING DEBIT CARD
+		DebitCard debitCard = null;
+		debitCard = new SavingsAccount();
+		debitCard.withdrawAmount();
+		
+		// USING SAVINGS ACCOUNT
+		SavingsAccount savingsAccount = null;
+		savingsAccount = new SavingsAccount();
+		System.out.println("USING SAVINGS ACCOUNT");	
+		savingsAccount.displayAccountInfo();
+		savingsAccount.transferAmount();
+		savingsAccount.displayBankDetails();
+		savingsAccount.withdrawAmount();
 	}
+
 }
 
 //interfaces have abstract methods
@@ -62,6 +84,10 @@ class SavingsAccount extends Account implements NetBanking, DebitCard {
 	public void withdrawAmount() {
 		System.out.println("Withdraw amount from Savings Bank Account using DebitCard");
 
+	}
+
+	public void openFixedDeposit() {
+		System.out.println("Open Fixed Deposit by Visiting the Bank");
 	}
 }
 
