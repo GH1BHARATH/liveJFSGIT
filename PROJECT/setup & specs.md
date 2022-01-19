@@ -11,7 +11,7 @@ GIT Team : https://github.com/GH1BHARAT/JFSGIT
 
 :beginner: _**JAVA PROJECT**_
 
-Project Name : FMCGGlobalDesktopAppV1
+Project Name : FMCGGlobalDesktopAppV1  
 Project Name : EzShopDesktopAppV1
 
 :beginner: _**MAVEN PROJECT**_
