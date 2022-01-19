@@ -13,6 +13,7 @@ GIT Team : https://github.com/GH1BHARAT/JFSGIT
 
 Project Name : FMCGGlobalDesktopAppV1  
 Project Name : EzShopDesktopAppV1
+Project Name : Desktop\GH20YASAR\
 
 :beginner: _**MAVEN PROJECT**_
 
