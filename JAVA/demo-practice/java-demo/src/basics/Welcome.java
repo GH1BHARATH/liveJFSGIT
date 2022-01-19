@@ -8,5 +8,6 @@ class Welcome {
 	//CREATE THE MAIN METHOD
 	public static void main(String args[]){
 		System.out.println("Welcome to our first java program");
+
 	}
 }
