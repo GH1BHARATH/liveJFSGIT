@@ -1,3 +1,7 @@
+:beginner: _**SET UP**_
+- JDK 11 https://www.oracle.com/in/java/technologies/javase/jdk11-archive-downloads.html#license-lightbox)  
+- junit https://mvnrepository.com/artifact/junit/junit/4.12
+
 :books: **PROJECT SPECIFICATOINS**
 
 :beginner: _**DATABASE & GITHUB**_

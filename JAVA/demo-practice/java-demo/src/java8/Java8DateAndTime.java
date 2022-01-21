@@ -18,14 +18,22 @@ public class Java8DateAndTime {
 		System.out.println("Local Date Time String " + localDateTimeString);
 		
 		//String to Date Conversion
-		String dateString = "02-08-2021";
-		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MM-yyyy");
+		String dateString = "2021-08-02";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-mm-dd");
 		try {
 			Date parsedDate  = simpleDateFormat.parse(dateString);
 			System.out.println(parsedDate);
+			  String parsedDateteString = simpleDateFormat.format(parsedDate);
+	            System.out.println(parsedDateteString);
+      LocalDate expiryDate = LocalDate.parse(parsedDateteString);
+	            String expiryDateString = expiryDate.getYear() + "-" + expiryDate.getMonthValue() + "-" +expiryDate.getDayOfMonth();
+       System.out.println(expiryDateString);
+	            System.out.println(expiryDate.getMonth());
 		}
 		catch (ParseException parseException) {
 			System.out.println("Exception : Invalid date format " + parseException);
 		}
 	}
 }
+
+
