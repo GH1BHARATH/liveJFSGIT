@@ -37,4 +37,25 @@ public class MySQLDBConnection {
 		}
 		return null;
 	}
+	public static int saveRecord(String insertQuery) {
+		int rowsInserted = 0;
+		try {
+			// CREATE THE STATEMENT
+			Statement statement = getConnection().createStatement();
+			// EXECUTE THE QUERY AND GET THE RESULT SET
+			rowsInserted  = statement.executeUpdate(insertQuery);
+			
+			// CHECK IF DATA IS INSERTED SUCCESSFULLY 
+			if(rowsInserted > 0 ) {
+				System.out.println("Inserted Record successfully!");
+			}
+			else
+			{
+				System.out.println("The record could not be saved....");
+			}
+		} catch (SQLException sqlException) {
+			System.out.println("Cannot execute query : " + sqlException);
+		}
+		return rowsInserted;
+	}
 }
