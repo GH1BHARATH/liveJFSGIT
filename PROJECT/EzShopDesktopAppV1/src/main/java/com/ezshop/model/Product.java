@@ -17,6 +17,22 @@ public class Product extends Object{
 		return productId;
 	}
 
+	public void setProductId(String productId) {
+		this.productId = productId;
+	}
+
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
 	public String getProductName() {
 		return productName;
 	}

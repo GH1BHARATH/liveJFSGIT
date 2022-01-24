@@ -36,7 +36,10 @@ public class ProductRepository {
 		String insertQuery = "INSERT INTO PRODUCTS VALUES ('" + product.getProductId() + "','"
 				+ product.getProductName() + "'," + product.getPrice() + "," + product.getQuantity() + ");";
 		System.out.println(insertQuery);
-		MySQLDBConnection.saveRecord(insertQuery);
-		return product;
+		int recordSaved = MySQLDBConnection.saveRecord(insertQuery);
+		if(recordSaved == 1) {
+			return product;
+		}
+		return null;
 	}
 }

@@ -65,7 +65,7 @@ public class EzShopApp {
 
 	private void saveProduct() {
 //		ACCEPT PRODUCT DETAILS FROM USER
-		Product product = new Product("P03", "7H", 50, 100);
-		productRepository.save(product);
+		Product product = new Product("P04", "7H", 50, 100);
+		Product savedProduct = productRepository.save(product);
 	}
 }
