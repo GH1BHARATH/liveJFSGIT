@@ -53,7 +53,6 @@ public class MethodReference {
 	
 }
 
-
 class Utils {
 	// STATIC METHOD
 	public static int countElements(Object[] array) {
