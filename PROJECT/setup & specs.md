@@ -1,7 +1,8 @@
 :beginner: _**SET UP**_
 - JDK 11 https://www.oracle.com/in/java/technologies/javase/jdk11-archive-downloads.html#license-lightbox)  
 - junit https://mvnrepository.com/artifact/junit/junit/4.12
-
+- TOMCAT https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.58/bin/apache-tomcat-9.0.58-windows-x64.zip  
+  
 :books: **PROJECT SPECIFICATOINS**
 
 :beginner: _**DATABASE & GITHUB**_
