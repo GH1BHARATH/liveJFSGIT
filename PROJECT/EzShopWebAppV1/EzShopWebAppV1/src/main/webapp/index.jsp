@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2>Welcome to Servlets</h2>
+<h2>Hello World!</h2>
 </body>
 </html>

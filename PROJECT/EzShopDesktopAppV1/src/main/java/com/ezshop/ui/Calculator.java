@@ -1,4 +1,4 @@
-package com.ezshop;
+package com.ezshop.ui;
 
 public class Calculator {
 

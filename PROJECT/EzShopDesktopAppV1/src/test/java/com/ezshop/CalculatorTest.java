@@ -6,6 +6,8 @@ import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import com.ezshop.ui.Calculator;
+
 public class CalculatorTest {
 	private static Calculator calculator = null;
 

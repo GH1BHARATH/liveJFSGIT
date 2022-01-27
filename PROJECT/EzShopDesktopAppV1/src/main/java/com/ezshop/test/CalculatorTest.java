@@ -1,6 +1,6 @@
 package com.ezshop.test;
 
-import com.ezshop.Calculator;
+import com.ezshop.ui.Calculator;
 
 public class CalculatorTest {
 	private static Calculator calculator = null;

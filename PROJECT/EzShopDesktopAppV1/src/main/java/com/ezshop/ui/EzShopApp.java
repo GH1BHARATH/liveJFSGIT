@@ -1,4 +1,4 @@
-package com.ezshop;
+package com.ezshop.ui;
 
 import java.util.List;
 import java.util.Scanner;
