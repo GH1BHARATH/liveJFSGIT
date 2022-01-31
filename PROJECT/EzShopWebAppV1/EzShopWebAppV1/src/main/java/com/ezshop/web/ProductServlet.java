@@ -30,13 +30,13 @@ public class ProductServlet extends HttpServlet {
 //		} else {
 //			System.out.println("NO PRODUCTS");
 //		}
-		PrintWriter printWriter = response.getWriter();
-		printWriter.println("<html>");
-		printWriter.println("<body><h1>Servlets</h1>");
+		PrintWriter out = response.getWriter();
+		out.println("<html>");
+		out.println("<body><h1>Servlets</h1>");
 		List<Product> productsList = productRepository.findAll();
 		if (productsList.size() > 0) {
-			productsList.forEach(product -> printWriter.println("<h4 style='color:green'>" + product + "<h4>"));
+			productsList.forEach(product -> out.println("<h4 style='color:green'>" + product + "<h4>"));
 		}
-		printWriter.println("</body></html>");
+		out.println("</body></html>");
 	}
 }
