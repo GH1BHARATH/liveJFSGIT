@@ -10,7 +10,6 @@ public class EzShopApp {
 	Scanner scanner = null;
 	ProductRepository productRepository = null;
 
-
 	public static void main(String[] args) {
 		EzShopApp ezShopApp = new EzShopApp();
 		ezShopApp.displayMenu();
