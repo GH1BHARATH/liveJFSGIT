@@ -1,13 +1,29 @@
 //SOURCE CODE
-package com.ezshop.model;
+package com.ezshop.entity;
 
-public class Product extends Object{
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "PRODUCTS")
+public class Product {
+	@Id
+	// productID / PRODUCT_ID
+	@Column(name = "PRODUCT_ID")
 	private String productId;
+	// productName / PRODUCT_NAME
+	@Column(name = "PRODUCT_NAME")
 	private String productName;
 	private int price;
 	private int quantity;
-	
-	public Product(String productId,String productName,int price, int quantity) {
+
+	public Product() {
+
+	}
+
+	public Product(String productId, String productName, int price, int quantity) {
 		this.productId = productId;
 		this.productName = productName;
 		this.price = price;
@@ -46,13 +62,12 @@ public class Product extends Object{
 		return quantity;
 	}
 
-	
 //	@Override
 //	public String toString() {
 //		return "Product [productId=" + productId + ", productName=" + productName + ", price=" + price + ", quantity="
 //				+ quantity + "]";
 //	}
-	
+
 	@Override
 	public String toString() {
 		return "Product ID : " + productId + "\nProduct Name : " + productName + "\nPrice : " + price + "\nQuantity : "

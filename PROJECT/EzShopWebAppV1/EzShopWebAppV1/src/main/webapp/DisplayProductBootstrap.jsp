@@ -2,7 +2,7 @@
 <%@page import="java.util.List"%>
 <%@page import="java.io.IOException"%>
 <%@page import="com.ezshop.model.Product"%>
-<%@page import="com.ezshop.repository.ProductRepository"%>
+<%@page import="com.ezshop.repository.ProductRepositoryJDBC"%>
 
 <html>
 <head>
@@ -13,7 +13,7 @@
 <body>
 	<h1>Display Products</h1>
 	<%-- 	JSP DECLARATION --%>
-	<%!ProductRepository productRepository = new ProductRepository();%>
+	<%!ProductRepositoryJDBC productRepository = new ProductRepositoryJDBC();%>
 
 	<%
 	List<Product> productsList = productRepository.findAll();
