@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- ProductRepository productRepository = new ProductRepositoryImpl() -->
+	<!-- Spring Bean -->
+		<bean id="productRepository" class="com.ezshop.repository.ProductRepositoryImpl"/>
+	<bean id="productRepositoryUpdated" class="com.ezshop.repository.ProductRepositoryImplUpdated"/>
+	<bean id = "productIOC" class="com.ezshop.model.ProductIOC"/>
+</beans>
