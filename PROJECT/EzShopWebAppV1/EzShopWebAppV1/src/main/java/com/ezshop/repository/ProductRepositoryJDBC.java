@@ -7,7 +7,7 @@ import java.util.List;
 
 import com.ezshop.model.Product;
 
-public class ProductRepository {
+public class ProductRepositoryJDBC {
 	public List<Product> findAll() {
 		// LIST TO STORE PRODUCTS
 		List<Product> productsList = new ArrayList<Product>();

@@ -10,14 +10,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.ezshop.model.Product;
-import com.ezshop.repository.ProductRepository;
+import com.ezshop.repository.ProductRepositoryJDBC;
 
 public class ProductServlet extends HttpServlet {
-	ProductRepository productRepository = null;
+	ProductRepositoryJDBC productRepository = null;
 
 	@Override
 	public void init() throws ServletException {
-		productRepository = new ProductRepository();
+		productRepository = new ProductRepositoryJDBC();
 	}
 
 	@Override
