@@ -20,14 +20,13 @@ public class EzShopDesktopApp {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EzShopDesktopApp.class, args);
-
 	}
 
 	public EzShopDesktopApp() {
 		scanner = new Scanner(System.in);
 	}
 
-	private void displayMenu() {
+	public void displayMenu() {
 		System.out.println("WELCOME TO EZSHOP");
 		System.out.println("===================");
 		while_label: while (true) {
