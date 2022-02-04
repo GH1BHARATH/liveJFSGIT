@@ -36,4 +36,9 @@ public class ProductController {
 		System.out.println(productsHTML);
 		return productsHTML;
 	}
+	@GetMapping("/products")
+	protected List<Product> getAllProducts()  {
+		List<Product> productsList = productRepository.findAll();
+		return productsList;
+	}
 }
