@@ -25,6 +25,89 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"productId\": \"P100\",\r\n        \"productName\": \"IPhones\",\r\n        \"price\": 5005,\r\n        \"quantity\": 55\r\n    },",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/ezshop/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"ezshop",
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "products P100",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"productName\": \"Samsung\",\r\n        \"price\": 505,\r\n        \"quantity\": 5\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/ezshop/api/products/P100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"ezshop",
+						"api",
+						"products",
+						"P100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "products P100",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/ezshop/api/products/P100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"ezshop",
+						"api",
+						"products",
+						"P100"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

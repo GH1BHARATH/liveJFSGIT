@@ -1,7 +1,7 @@
 //SOURCE CODE
 package com.ezshop.model;
 
-public class Product extends Object{
+public class Product {
 	private String productId;
 	private String productName;
 	private int price;
