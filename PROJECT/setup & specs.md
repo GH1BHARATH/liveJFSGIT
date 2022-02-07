@@ -1,8 +1,9 @@
 :beginner: _**SET UP**_
-- JDK 11 https://www.oracle.com/in/java/technologies/javase/jdk11-archive-downloads.html#license-lightbox)  
+
+- JDK 11 https://www.oracle.com/in/java/technologies/javase/jdk11-archive-downloads.html#license-lightbox)
 - junit https://mvnrepository.com/artifact/junit/junit/4.12
-- TOMCAT https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.58/bin/apache-tomcat-9.0.58-windows-x64.zip  
-  
+- TOMCAT https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.58/bin/apache-tomcat-9.0.58-windows-x64.zip
+
 :books: **PROJECT SPECIFICATOINS**
 
 :beginner: _**DATABASE & GITHUB**_
@@ -35,3 +36,8 @@ Dependencies : https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0
 		</dependency>
 	</dependencies>
 ```
+
+:beginner: _**REST API with POSTMan Tool**_
+
+https://www.postman.com/downloads/
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status

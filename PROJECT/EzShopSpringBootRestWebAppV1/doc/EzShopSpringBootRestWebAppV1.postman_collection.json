@@ -1,0 +1,30 @@
+{
+	"info": {
+		"_postman_id": "7921244f-364c-4c44-a99a-877656a9987c",
+		"name": "EzShopSpringBootRestWebAppV1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/ezshop/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"ezshop",
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
