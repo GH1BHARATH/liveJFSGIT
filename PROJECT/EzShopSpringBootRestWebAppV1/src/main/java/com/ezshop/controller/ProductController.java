@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ezshop.entity.Product;
+import com.ezshop.entity.ProductsResponse;
 import com.ezshop.repository.ProductRepository;
 
 @RestController
@@ -22,12 +23,12 @@ public class ProductController {
 	ProductRepository productRepository;
 
 	@GetMapping("/welcome")
-	protected String welcome() {
+	private String welcome() {
 		return "<html><head><title>Welcome SpringBoot Web app</title></head><body><h1>Welcome to the world of springboot............</h1></body></html>";
 	}
 
 	@GetMapping("/productsAsHTML")
-	protected String getAllProductsAsHTML() {
+	private String getAllProductsAsHTML() {
 		List<Product> productsList = productRepository.findAll();
 		String productsHTML = "<html><head><title>Display Product Details !!!</title>"
 				+ "<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\">\r\n"
@@ -45,9 +46,17 @@ public class ProductController {
 	}
 
 	@GetMapping("/products")
-	protected List<Product> getAllProducts() {
+	private List<Product> getAllProducts() {
 		List<Product> productsList = productRepository.findAll();
 		return productsList;
+	}
+	
+	@GetMapping("/productsResponse")
+	private ProductsResponse getAllProductsResponse() {
+		List<Product> productsList = productRepository.findAll();
+		ProductsResponse productsResponse = new ProductsResponse();
+		productsResponse.setProducts(productsList);
+		return productsResponse;
 	}
 
 	// SEARCH PRODUCTS BY PRODUCT NAME

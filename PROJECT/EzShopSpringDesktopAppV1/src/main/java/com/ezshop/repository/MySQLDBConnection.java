@@ -6,8 +6,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class MySQLDBConnection {
-	public static Connection getConnection() {
+public final class MySQLDBConnection {
+	public static final Connection getConnection() {
 		Connection connection = null;
 		try {
 //			LOAD THE DRIVER
