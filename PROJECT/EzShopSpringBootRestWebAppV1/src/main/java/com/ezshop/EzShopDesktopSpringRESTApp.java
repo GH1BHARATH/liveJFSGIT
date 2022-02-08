@@ -4,7 +4,7 @@ import org.springframework.web.client.RestTemplate;
 
 import com.ezshop.entity.ProductsResponse;
 
-public class EzShopDesktopSpringRESTApp {
+public final class EzShopDesktopSpringRESTApp {
 	final static RestTemplate productsRestTemplate;
 	final static String restAPIURLString = "http://localhost:9090/ezshop/api/";
 
