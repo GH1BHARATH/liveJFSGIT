@@ -1,3 +1,4 @@
+package com.ezshop;
 //package com.ezshop;
 //
 //import java.util.Scanner;
@@ -12,7 +13,7 @@
 //
 //@SpringBootApplication
 //
-//public class EzShopDesktopApp implements CommandLineRunner{
+//public class EzShopDesktopSpringCoreApp implements CommandLineRunner{
 //	Scanner scanner = null;
 //	// SPRING FREAMWORK CREATES THE INSTANCE OF PRODUCT REPOSITORY
 //	// AND INJECTS IT DEPENDENCY INJECTION (DI) 
@@ -20,7 +21,7 @@
 //	ProductRepository productRepository;
 //
 //	public static void main(String[] args) {
-//		SpringApplication.run(EzShopDesktopApp.class, args);
+//		SpringApplication.run(EzShopDesktopSpringCoreApp.class, args);
 //	}
 //
 //	public EzShopDesktopApp() {

@@ -13,22 +13,24 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>EzShopSpringBootRestWebAppV1</name>
 	<description>Demo project for Spring Boot</description>
+		<!-- MAVEN LOADS THE DEPENDENCIES JARS -->
+	<!-- MAVEN BUILDS THE PROJECT FOR JAVA 1.8 -->
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
-	
+	<!-- SPRING BOOT LOADING -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
-
+<!-- TOMCAT -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency> 
 
-
+<!-- HIBERNTATE WITH SPRING INTEGERATION -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>

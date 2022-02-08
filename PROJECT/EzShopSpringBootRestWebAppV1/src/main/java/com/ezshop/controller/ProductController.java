@@ -50,6 +50,13 @@ public class ProductController {
 		return productsList;
 	}
 
+	// SEARCH PRODUCTS BY PRODUCT NAME
+	@GetMapping("/products/find/{productName}")
+	public List<Product> searchProductByName(@PathVariable(value="productName") String productName){
+		List<Product>  productsList = productRepository.findByProductName(productName);
+		return productsList;
+	}
+	
 	@PostMapping("/products")
 	private Product createProduct(@RequestBody Product productFromBrowser) {
 //	    {
@@ -74,7 +81,9 @@ public class ProductController {
 		Product updatedProduct = productRepository.save(existingProduct);
 		return updatedProduct;
 	}
+	
 	@DeleteMapping("/products/{productIdFromBrowser}")
+
 	private void deleteProduct(@PathVariable(value = "productIdFromBrowser") String productId) {
 		productRepository.deleteById(productId);
 	}
