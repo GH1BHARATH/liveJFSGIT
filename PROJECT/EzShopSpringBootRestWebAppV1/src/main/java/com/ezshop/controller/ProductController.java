@@ -51,7 +51,7 @@ public class ProductController {
 		return productsList;
 	}
 	
-	@GetMapping("/productsResponse")
+	@GetMapping("/products/response")
 	private ProductsResponse getAllProductsResponse() {
 		List<Product> productsList = productRepository.findAll();
 		ProductsResponse productsResponse = new ProductsResponse();
