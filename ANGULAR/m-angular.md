@@ -15,13 +15,14 @@
 | spring boot | angular |
 |-|-|
 | src/main/java | src |
-| pom.xml | package.json |
-|maven |npm | 
+| pom.xml (dependencies)| package.json (dependencies) |
+|maven |npm (node package manager) | 
 |tomact |node | 
-|java | typescript (transpiled into javascript) |
+|java (compiled into bytecode) | typescript (transpiled into javascript) |
 |model |model |
 |servlet / jsp [java/html/css/javascript] | componment [html/css/tytpescript] |   
 |AppServlet |AppComponent | 
 |AppServlet.java |app.component.ts, app.component.html, app.component.css | 
-|main/service method | main.ts | 
-|package |module | 
+|main/service | main.ts | 
+|package (classes) |module (components) | 
+| java.lang | AppModule
